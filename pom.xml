@@ -4,9 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.emanuelvini</groupId>
-    <artifactId>MultiServer-API</artifactId>
+    <groupId>com.emanuelvini.multiserver</groupId>
+    <artifactId>framer</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -14,6 +15,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     </properties>
+
+    <modules>
+        <module>shared</module>
+        <module>bukkit</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -22,5 +28,4 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
 </project>
